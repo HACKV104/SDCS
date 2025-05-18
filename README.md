@@ -55,15 +55,15 @@ Features:
 |   Records View     | RecyclerView list of all downloaded `.txt` results, long-press multi-select, batch delete, legacy `captured_data.txt` support |
 |   Backend          | `/uploadImage` endpoint, GPU toggled EasyOCR, auto-timestamping, location tagging, download-as-attachment                     |
 
-Architecture:
-┌───────────────────┐        POST image/voice         ┌────────────────────────┐
-│  Android app      │ ──────────────────────────────► │  Flask backend         │
-│  (Kotlin/Java)    │                                │  /uploadImage          │
-│                   │ ◄───────── .txt attachment ─── │  OCR (Tesseract/Easy)  │
-└───────────────────┘                                └────────────────────────┘
-        │                                                         │
-        ▼                                                         ▼
-Internal storage                                    uploads/<ts>_<type>_<loc>.jpg/.txt
+Architecture:<br>
+┌───────────────────┐        POST image/voice         ┌────────────────────────┐<br>
+│  Android app      │ ──────────────────────────────► │  Flask backend         │<br>
+│  (Kotlin/Java)    │                                │  /uploadImage          │<br>
+│                   │ ◄───────── .txt attachment ─── │  OCR (Tesseract/Easy)  │<br>
+└───────────────────┘                                └────────────────────────┘<br>
+        │                                                         │<br>
+        ▼                                                         ▼<br>
+Internal storage                                    uploads/<ts>_<type>_<loc>.jpg/.txt<br>
 
 
 Prerequisites:
@@ -122,19 +122,19 @@ Errors: 400 if no body, 500 on OCR failure.
 GET /ping
 Health-check: returns pong.
 
-Folder structure:
-smartdatacapturesystem/
-│
-├─ app/                      # Android source
-│   ├─ java/com/.../*.java   # Activities, adapters
-│   └─ res/                  # Layouts, drawables
-│
-├─ backend/                  # Flask server
-│   ├─ app.py
-│   ├─ requirements.txt
-│   └─ uploads/              # Auto-created for images & txt
-│
-└─ README.md                 # You’re here
+Folder structure:<br>
+smartdatacapturesystem/<br>
+│<br>
+├─ app/                      # Android source<br>
+│   ├─ java/com/.../*.java   # Activities, adapters<br>
+│   └─ res/                  # Layouts, drawables<br>
+│<br>
+├─ backend/                  # Flask server<br>
+│   ├─ app.py<br>
+│   ├─ requirements.txt<br>
+│   └─ uploads/              # Auto-created for images & txt<br>
+│<br>
+└─ README.md                 # You’re here<br>
 
 Troubleshooting:
 | Symptom                         | Fix                                                                                                                                    |
