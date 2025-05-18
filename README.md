@@ -1,5 +1,5 @@
-Smart Data Capture System<br>
-A lightweight Android + Flask stack for fast voice / image data collection & OCR
+Smart Data Capture System<br><br>
+A lightweight Android + Flask stack for fast voice / image data collection & OCR<br>
 
 Table of Contents
 Overview
@@ -24,7 +24,7 @@ Overview
 
 10.License
 
-Overview<br>
+Overview<br><br>
 Smart Data Capture System (SDCS) is an end-to-end sample project that demonstrates how to:
 
 Capture structured data from a mobile device via
