@@ -27,23 +27,23 @@ Overview
 Overview<br><br>
 Smart Data Capture System (SDCS) is an end-to-end sample project that demonstrates how to:
 
-Capture structured data from a mobile device via
+ -Capture structured data from a mobile device via
 
-Camera (docs / tables / forms / handwriting)
+ -Camera (docs / tables / forms / handwriting)
 
-Gallery uploads
+ -Gallery uploads
 
-Speech-to-text voice input
+ -Speech-to-text voice input
 
-Send the raw media to a lightweight Flask backend
+ -Send the raw media to a lightweight Flask backend
 
-Process images with Tesseract (printed text) or EasyOCR (handwriting) on the server
+ -Process images with Tesseract (printed text) or EasyOCR (handwriting) on the server
 
-Return the extracted text file to the device as a download
+ -Return the extracted text file to the device as a download
 
-Persist & manage results locally on Android (RecyclerView with multi-select & delete)
+ -Persist & manage results locally on Android (RecyclerView with multi-select & delete)
 
-The entire solution is less than <250 LOC of Python and ≈1.2 kLOC of Android/Kotlin/Java, making it easy to read, hack, and extend.
+ -The entire solution is less than <250 LOC of Python and ≈1.2 kLOC of Android/Kotlin/Java, making it easy to read, hack, and extend.
 
 Features:
 
