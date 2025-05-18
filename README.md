@@ -56,14 +56,17 @@ Features:
 |   Backend          | `/uploadImage` endpoint, GPU toggled EasyOCR, auto-timestamping, location tagging, download-as-attachment                     |
 
 Architecture:<br>
-┌───────────────────┐        POST image/voice         ┌────────────────────────┐<br>
-│  Android app      │ ──────────────────────────────► │  Flask backend         │<br>
-│  (Kotlin/Java)    │                                │  /uploadImage          │<br>
-│                   │ ◄───────── .txt attachment ─── │  OCR (Tesseract/Easy)  │<br>
-└───────────────────┘                                └────────────────────────┘<br>
-        │                                                          │<br>
-        ▼                                                          ▼<br>
-Internal storage                                uploads/&lt;ts&gt;_&lt;type&gt;_&lt;loc&gt;.jpg/.txt<br>
+<pre>
+┌───────────────────┐        POST image/voice         ┌────────────────────────┐
+│  Android app      │ ──────────────────────────────► │  Flask backend         │
+│  (Kotlin/Java)    │                                │  /uploadImage          │
+│                   │ ◄───────── .txt attachment ─── │  OCR (Tesseract/Easy)  │
+└───────────────────┘                                └────────────────────────┘
+        │                                                          │
+        ▼                                                          ▼
+Internal storage                                uploads/&lt;ts&gt;_&lt;type&gt;_&lt;loc&gt;.jpg/.txt
+</pre>
+
 
 
 Prerequisites:<br>
