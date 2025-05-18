@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#FFF">
+    <androidx.camera.view.PreviewView
+        android:id="@+id/previewView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- ScrollView to show recognized text -->
+    <ScrollView
+        android:id="@+id/scrollResult"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_above="@id/typeSpinner"
+        android:layout_margin="16dp"
+        android:background="@drawable/rounded_light_bg"
+        android:elevation="6dp"
+        android:padding="12dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/textOutput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recognized text will appear here..."
+            android:textSize="16sp"
+            android:textColor="#333"
+            tools:ignore="HardcodedText" />
+    </ScrollView>
+
+    <!-- Styled Spinner above Scan button -->
+    <Spinner
+        android:id="@+id/typeSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btnCapture"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/spinner_background"
+        android:spinnerMode="dropdown" />
+
+    <!-- Capture Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnCapture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scan"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="24dp"
+        app:cornerRadius="24dp"
+        app:icon="@drawable/ic_scan_camera"
+        app:iconPadding="8dp"
+        app:iconTint="@color/white"
+        android:backgroundTint="@color/purple_500"
+        android:textColor="@android:color/white"
+        android:elevation="8dp" />
+</RelativeLayout>

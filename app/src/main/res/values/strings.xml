@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Smart Data Capture System</string>
+    <string name="server_ip">192.168.114.233</string>   <!-- change whenever needed -->
+    <string-array name="image_types"> <item>Docs</item> <item>Handwriting</item> <item>Table</item> <item>Form</item> <item>Instrument Panel</item> </string-array>
+</resources>

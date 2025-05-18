@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="@color/white">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🎙 Voice Input"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#222222"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Recognized text output -->
+    <TextView
+        android:id="@+id/voiceOutput"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:text="Press mic and speak..."
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:background="@drawable/bg_rounded_gray"
+        android:padding="16dp"
+        android:layout_marginBottom="24dp"
+        android:gravity="start|top" />
+
+    <!-- Start voice button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnStartVoice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🎤 Start Listening"
+        app:cornerRadius="16dp"
+        app:icon="@drawable/ic_mic"
+        app:iconPadding="8dp"
+        app:iconTint="@android:color/white"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/purple_500"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Save voice data button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSaveVoice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="💾 Save Data"
+        app:cornerRadius="16dp"
+        app:icon="@drawable/ic_save"
+        app:iconPadding="8dp"
+        app:iconTint="@android:color/white"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/teal_700" />
+
+</LinearLayout>
