@@ -148,4 +148,4 @@ Troubleshooting:
 |   EasyOCR CUDA errors           | Set `EASYOCR_GPU=false` or install correct CUDA/cuDNN versions.                                                                        |
 
 License
-MIT © 2025 Your Name. Feel free to copy, fork, and improve!
+MIT © 2025 Last-Minute Pioneers. Feel free to copy, fork, and improve!
