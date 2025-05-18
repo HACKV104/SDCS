@@ -59,9 +59,9 @@ Architecture:<br>
 <pre>
 ┌───────────────────┐        POST image/voice         ┌────────────────────────┐
 │  Android app      │ ──────────────────────────────► │  Flask backend         │
-│  (Kotlin/Java)    │                                │  /uploadImage          │
-│                   │ ◄───────── .txt attachment ─── │  OCR (Tesseract/Easy)  │
-└───────────────────┘                                └────────────────────────┘
+│  (Kotlin/Java)    │                                 │  /uploadImage          │
+│                   │ ◄───────── .txt attachment ───  │  OCR (Tesseract/Easy)  │
+└───────────────────┘                                 └────────────────────────┘
         │                                                          │
         ▼                                                          ▼
 Internal storage                                uploads/&lt;ts&gt;_&lt;type&gt;_&lt;loc&gt;.jpg/.txt
