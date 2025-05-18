@@ -1,4 +1,4 @@
-Smart Data Capture System
+Smart Data Capture System<br>
 A lightweight Android + Flask stack for fast voice / image data collection & OCR
 
 Table of Contents
@@ -24,7 +24,7 @@ Overview
 
 10.License
 
-Overview
+Overview<br>
 Smart Data Capture System (SDCS) is an end-to-end sample project that demonstrates how to:
 
 Capture structured data from a mobile device via
@@ -61,12 +61,12 @@ Architecture:<br>
 │  (Kotlin/Java)    │                                │  /uploadImage          │<br>
 │                   │ ◄───────── .txt attachment ─── │  OCR (Tesseract/Easy)  │<br>
 └───────────────────┘                                └────────────────────────┘<br>
-        │                                                         │<br>
-        ▼                                                         ▼<br>
-Internal storage                                    uploads/<ts>_<type>_<loc>.jpg/.txt<br>
+        │                                                          │<br>
+        ▼                                                          ▼<br>
+Internal storage                                uploads/&lt;ts&gt;_&lt;type&gt;_&lt;loc&gt;.jpg/.txt<br>
 
 
-Prerequisites:
+Prerequisites:<br>
 | Tool               | Version (known good)                                             |
 | ------------------ | ---------------------------------------------------------------- |
 |   Android Studio   | Iguana / Flamingo 2023.3.1+                                      |
@@ -76,7 +76,7 @@ Prerequisites:
 |   Tesseract-OCR    | 5.x (install & add to PATH, or edit `pytesseract.tesseract_cmd`) |
 |   CUDA + cuDNN     | *Optional* if you want GPU EasyOCR                               |
 
-Backend (Flask) setup:
+Backend (Flask) setup:<br>
 cd backend
 python -m venv venv
 source venv/bin/activate          # Windows: venv\Scripts\activate
@@ -99,7 +99,7 @@ Click Run ▶.
 
 The first run will ask for Camera, Microphone, Fine Location, and All-Files (Scoped Storage) permissions.
 
-Build & Run:
+Build & Run:<br>
 | Task                  | Command                     |
 | --------------------- | --------------------------- |
 |   Backend             | `python app.py`             |
@@ -107,7 +107,7 @@ Build & Run:
 |   APK (release)       | `./gradlew assembleRelease` |
 |   Clean               | `./gradlew clean`           |
 
-REST API:
+REST API:<br>
 POST /uploadImage
 | Query param | Description                                        |
 | ----------- | -------------------------------------------------- |
