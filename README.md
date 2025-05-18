@@ -146,6 +146,8 @@ Troubleshooting:
 |   Tesseract not found           | Edit `pytesseract.tesseract_cmd` in `backend/app.py` to the full path of `tesseract.exe` or binary.                                    |
 |   Permission denied (storage)   | On Android 11+, enable “All files access” in Settings ▸ Apps ▸ SDCS ▸ Permissions.                                                     |
 |   EasyOCR CUDA errors           | Set `EASYOCR_GPU=false` or install correct CUDA/cuDNN versions.                                                                        |
+
+
 <br><br><br>
 License
 MIT © 2025 Last-Minute Pioneers. Feel free to copy, fork, and improve!
